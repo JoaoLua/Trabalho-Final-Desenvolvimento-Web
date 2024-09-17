@@ -25,5 +25,62 @@
             </div>
         </nav>
     </header>
+
+    <!-- notas na tela inicial -->
+    <div class="notas-container">
+        <div class="nota">
+            <h3>Título da Nota</h3>
+            <p>Este é o conteúdo da nota. Ele pode ter várias linhas de texto que descrevem as informações anotadas.</p>
+            <div class="nota-actions">
+                <button class="btn btn-editar">Editar</button>
+                <button class="btn btn-excluir">Excluir</button>
+            </div>
+        </div>
+        <div class="nota">
+            <h3>Segunda Nota</h3>
+            <p>Conteúdo da segunda nota. Isso pode incluir qualquer tipo de anotação ou lembrete.</p>
+            <div class="nota-actions">
+                <button class="btn btn-editar">Editar</button>
+                <button class="btn btn-excluir">Excluir</button>
+            </div>
+        </div>
+        <div class="nota">
+            <h3>Título da Nota</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, recusandae neque? Soluta, maiores harum! Incidunt, reprehenderit delectus. Quis, repellendus possimus cum vitae eaque impedit magnam, aspernatur debitis dolores nam architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ea, exercitationem ipsum nisi provident odio error dolore iste quidem aliquam reiciendis recusandae quasi quibusdam aliquid facere, veritatis fugit. Atque, sequi.Este é o conteúdo da nota. Ele pode ter várias linhas de texto que descrevem as informações anotadas.</p>
+            <div class="nota-actions">
+                <button class="btn btn-editar">Editar</button>
+                <button class="btn btn-excluir">Excluir</button>
+            </div>
+        </div>
+        <div class="nota">
+            <h3>Segunda Nota</h3>
+            <p>Conteúdo da segunda nota. Isso pode incluir qualquer tipo de anotação ou lembrete.</p>
+            <div class="nota-actions">
+                <button class="btn btn-editar">Editar</button>
+                <button class="btn btn-excluir">Excluir</button>
+            </div>
+        </div>
+    </div> 
+    <script src="src/script/script.js"></script>
+    <!-- editando aq // pagina flutuante criacao de nota -->
+    <div class="criarNota" id="novaNota">
+        <div class="conteudoNovaNota">
+            <form action="#">
+                <h2>Nova Nota</h2>
+                <div class="inputNovaNota">
+                    <label for="tituloNota">Titulo</label>
+                    <input type="text" name="" id="tituloNota">
+                </div>
+                <div class="inputNovaNota">
+                    <label for="textNovaNota">Nota</label>
+                    <textarea name="textNovaNota" id="textNovaNota">Escreva Sua nota...</textarea>
+                </div>
+                <div class="btn-novaNota">
+                    <button type="submit" class="btn-novaNota slv">Salvar</button>
+                    <button type="button" class="btn-novaNota excl" onclick="fecharNovaNota()">Fechar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
