@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/estilos/novaNota.css">
+</head>
+<body>
+
+    <header>
+        <ul>
+            <a href="#" onclick="abrirNovaNota()">Nova Anotação</a>
+        </ul>
+    </header>
+    <script src="src/script/script.js"></script>
+    <div class="criarNota" id="criarNotaId">
+        <div class="conteudoNovaNota">
+            <form action="#">
+                <h2>Nova Nota</h2>
+                <div class="inputNovaNota">
+                    <label for="tituloNota">Titulo</label>
+                    <input type="text" name="" id="tituloNota">
+                </div>
+                <div class="inputNovaNota">
+                    <label for="textNovaNota">Nota</label>
+                    <textarea name="textNovaNota" id="textNovaNota">Escreva Sua nota...</textarea>
+                </div>
+                <div class="btn-novaNota">
+                    <button type="submit" class="btn-novaNota slv">Salvar</button>
+                    <button type="button" class="btn-novaNota excl" onclick="fecharNovaNota()">Fechar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
