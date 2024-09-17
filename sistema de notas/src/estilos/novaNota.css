@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark1:  #192428;
+    --dark2:  #2d383c; 
+    --dark3:  #414c50;
+    --azul1:  #0784b5;
+    --azul2:  #39ace7;
+    --branco: #ffffff;
+    --vermelho1: #BB0020;
+    --vermelho2: #bc001f94;
+}
+
+textarea {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.criarNota {
+    display: none; 
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000; /* deixa a div na frente */
+
+    border-radius: 4px;
+    color: var(--branco);
+
+}
+
+.criarNota h2 {
+    font-weight: 800;
+}
+
+.conteudoNovaNota {
+    background-color: var(--dark3);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px #121212;
+}
+
+.conteudoNovaNota label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.inputNovaNota input, .conteudoNovaNota textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark3);
+}
+
+.conteudoNovaNota textarea {
+    padding-bottom: 200px;
+}
+
+.slv {
+    padding: 15px 30px;
+    background-color: var(--azul2);
+    color: var(--branco);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.excl {
+    padding: 15px 30px;
+    background-color: var(--vermelho1);
+    color: var(--branco);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 800;
+}

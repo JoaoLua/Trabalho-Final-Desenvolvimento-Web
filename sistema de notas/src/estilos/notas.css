@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark1:  #192428;
+    --dark2:  #2d383c; 
+    --dark3:  #414c50;
+    --azul1:  #0784b5;
+    --azul2:  #39ace7;
+    --branco: #ffffff;
+    --vermelho1: #BB0020;
+    --vermelho2: #bc001f94;
+}
+
+.notas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+
+.nota {
+    background-color: var(--dark3);
+    padding: 20px;
+    box-shadow: 0px 4px 8px #121212;
+    border-radius: 8px;
+    width: 250px; 
+    word-wrap: break-word; 
+    font-weight: 300;
+}
+
+
+.nota h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--azul2);
+}
+
+.nota p {
+    font-size: 16px;
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+/* btn editar excluir */
+.nota-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: var(--azul1);
+    color: var(--branco);
+}
+
+.btn-editar:hover {
+    background-color: var(--azul2);
+}
+
+.btn-excluir {
+    background-color: var(--vermelho1);
+    color: var(--branco);
+}
+
+.btn-excluir:hover {
+    background-color: var(--vermelho2);
+}
